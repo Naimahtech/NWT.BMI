@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="BMI.css">
+  <!--javascript-->
+  <script type="text/javascript" src="BMI.js"></script>
+</head>
+<body>
+	<!--header-->
+<div class="row">
+  <div class="col-sm-12 col-lg-12 col-md-12"><h1>BMI calculator-A tool to measure body fat based on height and weight.</h1></div>
+</div>
+
+<!--body-->
+<div class="row">
+  <div class="col-lg-7 col-md-8 col-sm-12">Body mass Index is used to calculate your total amount of fat. It is an approximate <br>
+  	<img src="weight.jpg"></div>
+<!--left column ends-->
+
+  <div class="col-lg-5 col-md-4 col-sm-12"><h3>Calculate your BMI</h3><br>
+   <form role="form">
+   	<div class="row">
+  <div class="col-xs-6">
+    <input type="text" class="form-control" id="height" placeholder="enter your height" size="10" autofocus>
+    <select type="multiple" id="heightunits">
+        <option value="metres" selected="selected">metres</option>
+        <option value="inches">inches</option>
+    </select>
+  </div>
+</div>
+<p>
+ <div class="row">
+   <div class="col-xs-6">
+    <input type="text" class="form-control" id="weight" placeholder="enter your weight" width="10px" autofocus>
+    <select type="multiple" id="weightunits">
+        <option value="kg" selected="selected">kilograms</option>
+        <option value="lb">pounds</option>
+    </select>
+  </div>
+</div>
+</p>
+  <button type="submit" class="btn btn-primary" onclick="computeBMI();">computeBMI</button>
+  <input type="reset" class="btn btn-warning" value="Reset" />
+</form>
+
+<h1>Your BMI is: <span id="output">?</span></h1>
+
+<h2>This means: <span id="comment">?</span></h2> 
+	<img src="Capture.bmi.jpg">
+  </div>
+</div>
+
+<!--footer-->
+<div class="row">
+  <div class="col-s-*"></div>
+</div>
+
+</body>
+</html>
